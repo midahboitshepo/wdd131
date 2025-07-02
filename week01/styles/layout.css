@@ -1,4 +1,4 @@
-.parent {
+body {
     display: grid;
     grid-template: auto auto auto auto / auto auto;
 
