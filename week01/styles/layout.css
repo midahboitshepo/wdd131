@@ -6,22 +6,20 @@
         grid-column: 1/4;
         background:sienna;
         text-align: left;
-        padding-left: 2rem;
-        border-left: 5rem;
+     
     }
 
     menu {
         grid-column: 1/4;
-        background: brown;
-        text-align: center;
+        background:cadetblue;
+
     }
 
-    .left-side {
-        grid-column: 1/3;
+    main {
         background: coral;
-        text-align: left;
-    }
+        grid-column: 1 / 3;     }
 
+   
     .right-side {
         grid-column: 3/4;
         background: peru;
@@ -46,6 +44,7 @@
         flex-wrap: wrap;
         background-color: brown;
         align-items: center;
+        padding: bottom 2px;
     }
 
     .navigation li {
