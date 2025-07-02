@@ -1,6 +1,7 @@
 body {
     display: grid;
     grid-template: auto auto auto auto / auto auto;
+}
 
     header {
         grid-column: 1/4;
@@ -65,4 +66,3 @@ body {
         text-decoration-color: crimson;
     }
 
-}
