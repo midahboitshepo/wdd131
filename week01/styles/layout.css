@@ -1,41 +1,69 @@
-.container {
+.parent {
     display: grid;
-    grid-template-areas:
-            "header header"
-            "menu content"
-            "footer footer";
-        grid-template-columns: 1fr 3fr;
-        gap: 5px;
-        background-color: #2196F3;
-        padding: 5px;
+    grid-template: auto auto auto auto / auto auto;
+
+    header {
+        grid-column: 1/4;
+        background:sienna;
+        text-align: left;
+        padding-left: 2rem;
+        border-left: 5rem;
     }
-    
-    .container>div {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 10px;
-    }
-    
-    .container>div.header {
-        grid-area: header;
+
+    menu {
+        grid-column: 1/4;
+        background: brown;
         text-align: center;
     }
-    
-    .container>div.menu {
-        grid-area: menu;
+
+    .left-side {
+        grid-column: 1/3;
+        background: coral;
+        text-align: left;
     }
-    
-    .container>div.content {
-        grid-area: content;
+
+    .right-side {
+        grid-column: 3/4;
+        background: peru;
+        text-align: left;
     }
-    
-    .container>div.footer {
-        grid-area: footer;
+
+    .left-side,
+    .right-side {
+        padding-left: 2rem;
+        border-left: 5rem;
     }
-    
-    
-    .flex-container>div.menu {
+
+    footer {
+        grid-column: 1/4;
+        background: brown;
+        text-align: center;
+    }
+
+    .navigation {
+        list-style: none;
         display: flex;
-        flex-direction: row;
-        font-size: 30px;
+        flex-wrap: wrap;
+        background-color: brown;
+        align-items: center;
+    }
+
+    .navigation li {
+        flex: auto;
+
+    }
+
+    .navigation a {
+        display: flex;
+        color: #eee;
+        padding: 0.75rem;
         text-align: center;
+    }
+
+    .navigation a:hover {
+        font-weight: 700;
+        text-decoration: solid;
+        text-decoration-color: crimson;
+    }
+
 }
