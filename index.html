@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,22 @@
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course introduces responsive design 
     using HTML, CSS, and JavaScript with attention to usability, accessibility, and best practices in 
     web frontend development. This page is done by Midah Boitshepo to prove the concepts learnt on week 1" />
-    <title>WDD 131 – Dynamic Web Fundamentals – Midah Boitshepo</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <title>
+        WDD 131 – Dynamic Web Fundamentals – Midah Boitshepo
+    </title>
 </head>
+
 <body>
     <header>
-        <span id= "course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <span id="course-title">
+            <h1>WDD 131 – Dynamic Web Fundamentals</h1>
+        </span>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="https://www.linkedin.com/in/midahmosimanyana">LinkedIn</a></li>
                 <li><a href="https://byupw.instructure.com/">Canvas</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
@@ -23,17 +33,89 @@
     </header>
 
     <main>
-        <h1>Midah Boitshepo</h1>
-        <section class="card">About Me</section>
-        <section class="card">Web Dev Resources</section>
+<div class="cards">
+    <section class="card">
+                <h1>Midah Boitshepo</h1>
+                <div class="card-header">
+                    <h2>About Me</h2>
+                </div>
+                <div class="card-content">
+                    <p>
+                
+                        <img src="images/profile.jpg" alt="Hello, My name is Midah Boitshepo" width="100" class="profile-image" />Hello,
+                        My name is Midah Boitshepo. I am from a landlocked country
+                        called
+                        Botswana
+                        located in the southern part of Africa. I am married to my wonderful husband and we are blessed
+                        with
+                        three children,
+                        two girls and a boy. I have been a member of The Church of Jesus Christ of Latter Day Saints
+                        since 2011.
+                        I currently
+                        work as a Technical Manager in the Banking Sector. My goal is to have my own Information
+                        Technology
+                        Consulting company,
+                        where I will use my expert knowledge in IT to provide technical services like website
+                        development and
+                        app development to
+                        customers.
+                        I am currently a Software Developmet student at Brigham Young University.
+                
+                
+                    </p>
+                </div>
+                
+                <h3>Botswana</h3>
+                
+                <p>
+                <figure>
+                    <img src="images/OIP.webp" alt="Botswana Flag" class="map-image">
+                    <figcaption>Official Flag of Botswana</figcaption width="100">
+                </figure>
+                Botswana is a landlocked country located in
+                Southern Africa known for its diverse wildlife and
+                stunning natural
+                landscapes. It has a stable democracy and is one of the continent's most prosperous nations,
+                largely due to diamond
+                mining and tourism.The country's name means "Land of the Tswana", referring to the dominant ethnic group
+                in
+                Botswana. The Constitution
+                of Botswana recognises a homogeneous Tswana state. In Setswana the native language, Batswana is
+                grammatically plural; its singular form, which can refer to a single member of the Tswana or to a single
+                citizen
+                of
+                Botswana, is Motswana.
+                
+                </p>
+                
+                
+                </section>
+                <section class="card">
+                    <div class="card-header">
+                        <h2>Web Dev Resources</h2>
+                    </div>
+                    <div class="card-content"></div>
+                    <ul>
+                        <li><a href="https://dev.to/">Dev.to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                        <li><a href="https://www.udemy.com/">Udemy</a></li>
+                        <li><a href="https://placehold.co/">Image Placeholder</a></li>
 
+                </ul>
+                </div>
+                </section>
+                </div>
     </main>
+
     <footer>
-       
+
         <p>Midah Boitshepo - Botswana <span id="currentyear"></span></p>
         <p id="lastModified"></p>
 
     </footer>
-    
+
 </body>
+
 </html>
