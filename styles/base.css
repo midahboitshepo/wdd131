@@ -3,13 +3,14 @@ body {
     grid-template: auto auto auto auto / auto auto;
     padding: 10px;
     margin: 15px;
+}
 
     .pt-serif-regular {
         font-family: "PT Serif", serif;
         font-weight: 700;
         font-style: normal;
     }
-}
+
 
 header {
     grid-column: 1/4;
@@ -22,6 +23,7 @@ header span {
     padding:0.01rem;
     margin-bottom: 0;
     text-align: center;
+}
     .pt-serif-bold {
         font-family: "PT Serif", serif;
         font-weight: 400;
@@ -29,7 +31,7 @@ header span {
 
     }
 
-}
+
 
 menu {
     grid-column: 1/4;
