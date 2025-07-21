@@ -9,7 +9,8 @@
     }
 
   h2::after {
-      content: url(../images/weather-icon.svg ) width="120"}    
+    content: url(../images/weather-icon.svg )
+  }
 
     .flex-container {
         display: flex;
