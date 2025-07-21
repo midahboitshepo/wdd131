@@ -1,0 +1,40 @@
+:root {
+    --blue: #6495ed;
+    --white: #faf0e6;
+}
+
+body {
+    background-color: var(--blue);
+}
+
+h2 {
+    border-bottom: 2px solid var(--blue);
+}
+
+.flex-container {
+    flex-direction: column;
+    background-color: #f1f1f1;
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    font-size: 1rem;
+    padding: 1rem;
+    background-color:#6495ed;
+    text-align: center;
+    font-family: 'Acme', Arial, sans-serif;
+    color: black;
+}
+

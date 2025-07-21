@@ -1,0 +1,33 @@
+@media screen and (min-width:500px) {
+    .hero-image {
+        background-image: url('../images/zebra-3.jpg');
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+  h2::after {
+      content: url(../images/weather-icon.svg ) width="120"}    
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .flex-item-left {
+        background-color: #f1f1f1;
+        padding: 10px;
+        flex: 50%;
+    }
+
+    .flex-item-right {
+        background-color: dodgerblue;
+        padding: 10px;
+        flex: 50%;
+    }
+
+}

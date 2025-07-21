@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Midah Boitshepo">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course introduces responsive design 
+    using HTML, CSS, and JavaScript with attention to usability, accessibility, and best practices in 
+    web frontend development. This page is done by Midah Boitshepo to prove the concepts learnt this week">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/place.js"></script>
+    <title>
+        Botswana – Midah Boitshepo
+    </title>
+</head>
+
+<body onload="getDates(); windChill();">
+    <header class="hero">
+        <h1>Botswana</h1>
+
+    </header>
+
+    <main>
+        <div class="hero-image">
+            <img alt="zebra" width="480" src="images/zebra-1.webp" class="hero-image"
+                srcset="images/zebra-1.webp 480w, images/zebra-2.webp 960w, images/zebra-3.webp 1440w"
+                sizes="(max-width: 480px) 240px, (max-width: 960px) 480px, 1440px">
+       
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <h2>Data</h2>
+                <p>Area: 582,000 km²</p>
+                <p>Population: 2,351,627</p>
+                <p>Capital: Gaborone</p>
+                <p>Currency: Pula (BWP)</p>
+                <p>Languages: English, Setswana</p>
+                <p>Time Zone: Central Africa Time (UTC+2)</p>
+                <p>Calling Code: +267</p>
+                <p>Internet TLD: .bw</p>
+            </div>
+
+            <div class="flex-item-right">
+                <h2>Weather</h2>
+                <img alt="weather-icon" width="120" src="images/weather-icon.svg"
+                    srcset="images/weather-icon.svg 480w, images/weather-icon.svg 960w, images/weather-icon.svg 1440w"
+                    sizes="(max-width: 480px) 240px, (max-width: 960px) 480px, 1440px">
+                <p>Temperature: 20°C (68°F)</p>
+                <p>Conditions: Sunny</p>
+                <p>Wind: 15 km/h (9 mph)</p>
+                <p>Wind chill:<span id="windChill"></span></p>
+            </div>
+        </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <p>© Copyrights <span id="year"></span> By Midah Boitshepo - Botswana - Last Modification <span
+                id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
