@@ -92,20 +92,62 @@ const temples = [
     }
 ];
 
+// Add event listener to the menu button for filtering
+document.getElementById("menu").addEventListener("click", function () {
+    const nav = document.querySelector('.navigation');
+    nav.classList.toggle('open');
+    this.classList.toggle('open');
+});
+
+const container = document.querySelector('#templeCards');
+
+
+const oldTemples = temples.filter((temple) => {
+    const year = parseInt(temple.dedicated.split(',')[0]);
+    return year < 1900;
+});
+console.log(oldTemples);
+
+
+const newTemples = temples.filter((temple) => {
+    const year = parseInt(temple.dedicated.split(',')[0]);
+    return year >= 2000;
+});
+console.log(newTemples);
+
+
+const areaMoreThan900000 = temples.filter((temple) => temple.area > 900000);
+console.log(areaMoreThan900000);
+
+
+
+const areaLessThan10000 = temples.filter((temple) => temple.area < 10000);
+console.log(areaLessThan10000);
+
 // 4️⃣ loop through the array of temples
 // and create a card for each temple
+function createTempleCards(temples) {
+    // 4️⃣ create a container for the cards
+    // and set its id to 'templeCards'
 
-temples.forEach((result) => {
+
+
+    // 4️⃣ clear the container before adding new cards
+    container.innerHTML = '';
+
+    temples.forEach((result) => {
     // 5️⃣ create a card element
     // and set its class and id 
     const card = document.createElement('div');
     card.classList.add('card');
     card.id = "container";
-    // 5️⃣ create a container for the cards
-    // and set its id to 'temples'
-    const container = document.querySelector('#templeCards');
     // 5️⃣ set the inner HTML of the card
-    // with the temple's details
+        // with the temple's details
+     
+
+        // Filtering temples based on various criteria
+
+
     card.innerHTML = `    
         <div class="card">            
 
@@ -123,6 +165,10 @@ temples.forEach((result) => {
         </div>
     `;
     // 6️⃣ append the card to the container
-    container.appendChild(card);
-});
+        container.appendChild(card);
 
+    });
+}
+
+// Call the filterTemples function to apply the filters
+createTempleCards(temples) 

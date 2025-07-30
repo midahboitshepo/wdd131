@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/filtered-temples.js"></script>
     <title>
@@ -23,14 +24,14 @@
 <body>
     <header>
     <h1>Temple Album</h1>
-      <button type="button" id="menu"></button>
+    <button type="button" id="menu"></button>
         <nav>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><a href="#" onclick="createTempleCards(temples)">Home</a></li>
+                <li><a href="#" onclick="createTempleCards(oldTemples)">Old</a></li>
+                <li><a href="#" onclick="createTempleCards(newTemples)">New</a></li>
+                <li><a href="#" onclick="createTempleCards(areaMoreThan900000)">Large</a></li>
+                <li><a href="#" onclick="createTempleCards(areaLessThan10000)">Small</a></li>
             </ul>
         </nav>
     </header>
