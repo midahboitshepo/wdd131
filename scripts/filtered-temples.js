@@ -159,7 +159,7 @@ function createTempleCards(temples) {
                 <p>Area: ${result.area} sq. ft.</p>
              </div>
              <div class="cardImage">
-                <img src="${result.imageUrl}" class="cardImage">
+                <img src="${result.imageUrl}" class="cardImage" loading="lazy" alt="${result.templeName} Temple">
             </div>
 
         </div>
