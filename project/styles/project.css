@@ -6,6 +6,16 @@ body {
     
 }
 
+main {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 550;
+    font-style: normal;
+    line-height: 1.5;
+    padding: auto;
+
+
+}
 .pt-serif-regular {
     font-family: "PT Serif", serif;
     font-weight: 700;
