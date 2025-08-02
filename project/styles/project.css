@@ -1,0 +1,129 @@
+body {
+    display: grid;
+    grid-template: auto auto auto auto / auto auto;
+    padding: 10px;
+    margin: 20px;
+    
+}
+
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+header {
+    grid-column: 1/4;
+    margin-bottom: 0;
+}
+
+header span {
+    display: block;
+    background-color: #2CA58D;
+    padding: 0.01rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+menu {
+    grid-column: 1/4;
+    background: cadetblue;
+    margin-top: 0;
+
+}
+
+
+footer {
+    grid-column: 1/4;
+    background: #226f54;
+    text-align: center;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #B9E6CC;
+    align-items: center;
+    margin-top: 0;
+
+}
+
+.navigation li {
+    flex: auto;
+
+}
+
+.navigation a {
+    display: flex;
+    color: #094c3f;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: solid;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: auto;
+    max-width: 1000px;
+    gap: 20px;
+
+}
+
+.card {
+    border: 1px solid #0A2342;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f4f0bb;
+    max-width: max-content;
+    margin: 16px auto;
+
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #226f54;
+}
+
+.profile-image {
+    float: right;
+    padding: 16px;
+    margin-right: 15px;
+
+}
+
+.map_image {
+    float: left;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+h3 {
+    border-bottom: solid;
+}
+
+h1 {
+    padding: 10px;
+    margin: 0px;
+    background-color: #226f54;
+    font-family: raleway, sans-serif;
+
+}
+
