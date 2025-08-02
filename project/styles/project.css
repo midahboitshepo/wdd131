@@ -55,8 +55,8 @@ menu {
 
 footer {
     grid-column: 1/4;
-    background: #226f54;
-    text-align: center;
+    background-color: #adfadf;
+     text-align: center;
 }
 
 .navigation {
@@ -132,7 +132,7 @@ h3 {
 h1 {
     padding: 10px;
     margin: 0px;
-    background-color: #226f54;
+    background-color: #adfadf;
     font-family: raleway, sans-serif;
 
 }
