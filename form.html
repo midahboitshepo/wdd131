@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Midah Boitshepo">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course introduces responsive design 
+    using HTML, CSS, and JavaScript with attention to usability, accessibility, and best practices in 
+    web frontend development. This page is done by Midah Boitshepo to prove the concepts learnt this week">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/form.js"></script>
+    <title>
+        Form – Midah Boitshepo
+    </title>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+      
+    </header>
+
+    <main>
+       
+        <form method="get" actionn="review.html" class="form">
+            <fieldset>
+                <label for="product">Product Name</label>
+                <input type="select" name="product" id="product" required>
+                
+                <label for="rating">Overall Rating</label>
+                <input type="radio" name="rating" id="rating" value="1" required>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            
+                <label for="date">Date of Installation</label>
+                <input type="date" name="date" id="date" required>
+            </fieldset>
+            <fieldset>
+                <label for="features">Which features did you find useful in the product. (Check all that apply)</label>
+                <input type="checkbox" name="features" id="features"><label for="features">Durability</label>
+                
+                <input type="checkbox" name="features" id="features"><label for="features">Ease of use</label>
+                
+                <input type="checkbox" name="features" id="features"><label for="features">Performance</label>
+                
+                <input type="checkbox" name="features" id="features"><label for="features">Design</label>        
+            
+            </fieldset>
+            <fieldset>
+                <label for="review">Written Review</label>
+                <textarea name="review" id="review" rows="8" cols="50"></textarea>
+               
+                <label for="name">User Name</label>
+                <input type="text" name="name" id="name" >
+            </fieldset>
+            <fieldset>
+                
+                <input type="submit" value="Submit Review">
+
+            </fieldset>
+        </form>
+
+      
+
+    </main>
+
+    <footer>
+
+        <p>© Copyrights <span id="year"></span> By Midah Boitshepo - Botswana - Last Modification <span
+                id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
