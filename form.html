@@ -27,11 +27,12 @@
 
     <main>
        
-        <form method="get" action="review.html" id="reviewForm" class="form">
+        <form method="get" id="reviewForm" class="form" action="review.html">
 
             <fieldset>
+    
                 <label for="product">Product Name *</label>
-                <select id="productSelect" name="products" required>
+                <select id="productSelect" name="products">
                     <option value="" selected disabled>Select a product</option>
                     <!-- Options will be populated by JavaScript -->
                 </select>
@@ -39,7 +40,7 @@
                 <fieldset>
                 
                 <label for="rating">Overall Rating *</label>
-                <input type="radio" name="rating" id="rating" value="1" required>
+            
                 <div class="stars">
                     <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                     <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
@@ -53,13 +54,13 @@
             </fieldset>
             <fieldset>
                 <label for="features">Which features did you find useful in the product. (Check all that apply)</label>
-                <input type="checkbox" name="features" id="features"><label for="features">Durability</label>
+                <input type="checkbox" name="features" id="Durability"><label for="features">Durability</label>
                 
-                <input type="checkbox" name="features" id="features"><label for="features">Ease of use</label>
+                <input type="checkbox" name="features" id="ease"><label for="features">Ease of use</label>
                 
-                <input type="checkbox" name="features" id="features"><label for="features">Performance</label>
+                <input type="checkbox" name="features" id="Performance"><label for="features">Performance</label>
                 
-                <input type="checkbox" name="features" id="features"><label for="features">Design</label>        
+                <input type="checkbox" name="features" id="design"><label for="features">Design</label>
             
             </fieldset>
             <fieldset>
