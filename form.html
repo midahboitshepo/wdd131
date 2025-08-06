@@ -27,12 +27,18 @@
 
     <main>
        
-        <form method="get" actionn="review.html" class="form">
+        <form method="get" action="review.html" id="reviewForm" class="form">
+
             <fieldset>
-                <label for="product">Product Name</label>
-                <input type="select" name="product" id="product" required>
+                <label for="product">Product Name *</label>
+                <select id="productSelect" name="products" required>
+                    <option value="" selected disabled>Select a product</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+                </fieldset>
+                <fieldset>
                 
-                <label for="rating">Overall Rating</label>
+                <label for="rating">Overall Rating *</label>
                 <input type="radio" name="rating" id="rating" value="1" required>
                 <div class="stars">
                     <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
@@ -42,7 +48,7 @@
                     <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                 </div>
             
-                <label for="date">Date of Installation</label>
+                <label for="date">Date of Installation *</label>
                 <input type="date" name="date" id="date" required>
             </fieldset>
             <fieldset>
@@ -65,7 +71,7 @@
             </fieldset>
             <fieldset>
                 
-                <input type="submit" value="Submit Review">
+                <input type="submit" value="Submit Review" class="submit-button" id="submitButton">                                
 
             </fieldset>
         </form>

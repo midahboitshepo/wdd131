@@ -53,9 +53,8 @@ label {
 
 /* Checkbox *******************************************/
 input[type=checkbox] {
-    margin-left: 5px;
     cursor: pointer;
-    padding-left: 10px;
+    margin-right: 6px;
    }
 
 
