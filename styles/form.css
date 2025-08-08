@@ -85,7 +85,7 @@ input[type="radio"] {
 }
 .form input[type=text],
 .form input[type=range],    
-.form input[type=select],
+.form input[type=select]
  {
     width: 30%;
     box-sizing: border-box;

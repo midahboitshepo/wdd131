@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Midah Boitshepo">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course introduces responsive design 
+    using HTML, CSS, and JavaScript with attention to usability, accessibility, and best practices in 
+    web frontend development. This page is done by Midah Boitshepo to prove the concepts learnt this week">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/form.js"></script>
+    <title>
+        Contact Us
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+
+    </header>
+
+    <main>
+<div class="contact-container">
+
+<p>We'd love to hear from you! Please fill out the form below.</p>
+
+
+<form action="review.html" method="get" class="contact-form">
+    <fieldset>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email@" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+</fieldset>
+
+    <button type="submit">Send Message</button>
+</form>
+
+</div>
+
+    </main>
+
+    <footer>
+
+        <p>© Copyrights <span id="year"></span> By Midah Boitshepo - Botswana - Last Modification <span
+                id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
